@@ -1,0 +1,321 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Audiowide&family=Creepster&family=Indie+Flower&family=Libre+Baskerville&family=Michroma&family=Montserrat+Alternates&family=Orbitron&family=Permanent+Marker&family=Prompt&family=Righteous&family=Rubik+Iso&family=Rubik+Maze&family=Shadows+Into+Light&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#section1>#article1{
+    width: 100%;
+    height: 12vh;
+    margin: 0 auto;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    background-color:rgb(244, 74, 12);
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+#section1>#article1>.aside1>a>img{
+    width: 80px;
+    height:9vh;
+}
+
+input{
+    width: 75%;
+    align-items: center;
+    padding: 10px;
+    border-radius: 15px;
+    position: relative;
+}
+
+.aside2 span{
+    position: absolute;
+    right: 840px;
+    top: 30px;
+    font-size: 35px;
+    font-weight: bolder;
+}
+
+.aside3>ul{
+    list-style: none;
+    display: flex;
+    height: inherit;
+    justify-content: space-around;
+}
+
+.aside3>ul>li>a{
+    text-decoration: none;
+    color:black;
+    font-family: 'Libre Baskerville';
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.aside3>ul>li>a:hover{
+    color: #fff;
+    text-shadow: 2px 3px 4px black;
+}
+
+.aside1{
+    flex-basis: 20%;
+}
+.aside2{
+    flex-basis: 30%;
+}
+
+.aside3{
+    flex-basis: 40%;
+}
+
+hr{
+    color:black;
+    border:2px solid;
+}
+
+
+/* section 2 */
+.img{
+    background-image: url(./images/bgimg.jpg);
+    filter: blur(8px);
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+.div1>div>h1{
+    font-size: 90px;
+    width: 80%;
+    text-align: center;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    font-weight: bold;
+    color: black;
+    font-family: audiowide;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+    text-shadow: 4px 5px 6px white;
+    padding: 20px;
+}
+
+/* combo offer section */
+#article2{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    /* background-color: rgb(109, 102, 102); */
+    justify-content: space-around;
+    align-items: center;
+}
+
+.h2{
+    font-size: 70px;
+    font-family:cursive;
+    font-weight: bold;
+    text-align: center;
+    color: coral;
+    /* background-color: rgb(255, 227, 216); */
+    padding-top: 50px;
+    text-shadow: 2px 3px 4px black;
+}
+
+#article2>div img{
+    width: 250px;
+    height: 22vh;
+    padding-left: 90px;
+}
+
+#article2>div{
+    width: 400px;
+    height: 85vh;
+    border: solid;
+    border-radius: 20px;
+    padding: 20px;
+    background-image: linear-gradient(white,rgb(243, 169, 142),black);
+    box-shadow: 0px 8px 0px 0px rgb(82, 80, 80);
+}
+
+#article2>div>h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    color: black;
+    padding: 20px;
+    text-shadow: 1px 1px 4px coral;
+}
+
+#article2>div>ul{
+    color: #fff;
+    padding: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    align-items: center;
+    padding-left: 86px;
+}
+
+#article2 button{
+    padding: 10px;
+    width: 100px;
+    background-color:white;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 120px;
+}
+
+/* section 4th gallery */
+#article3>aside>div{
+    width: 400px;
+    height: 60vh;
+    background-color: #fff;
+}
+
+#article3>#dv1{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 60px;   
+}
+
+#article3>#dv2{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+#article3 img{
+    width: 400px;
+    height: 40vh;
+    position: relative;
+    border-radius: 30px;
+    justify-content: space-evenly;
+    box-shadow: 0px 0px 10px 5px black;
+    object-fit: cover;
+    text-align: center;
+}
+.divi1 p{
+    position: absolute;
+    top: 1180px;
+    left: 220px;
+    font-size: 40px;
+    color: white;
+    text-shadow: 3px 4px 5px black;
+    text-align: center;
+    visibility:hidden;
+}
+
+.divi1:hover img+p{
+    visibility: visible;
+}
+
+#dv1 img:hover{
+    border:2px solid white;
+}
+
+#dv2 img:hover{
+    border:2px solid white;
+}
+
+.divi2 p{
+    position: absolute;
+    top: 1180px;
+    left: 750px;
+    font-size: 40px;
+    color: white;
+    text-shadow: 3px 4px 5px black;
+    text-align: center;
+    visibility:hidden;
+}
+
+.divi2:hover img+p{
+    visibility: visible;
+}
+
+.divi3 p{
+    position: absolute;
+    top: 1180px;
+    left: 1230px;
+    font-size: 40px;
+    color: white;
+    text-shadow: 3px 4px 5px black;
+    text-align: center;
+    visibility:hidden;
+}
+
+.divi3:hover img+p{
+    visibility: visible;
+}
+
+.divi4 p{
+    position: absolute;
+    top: 1700px;
+    left: 220px;
+    font-size: 40px;
+    color: white;
+    text-shadow: 3px 4px 5px black;
+    text-align: center;
+    visibility:hidden;
+}
+
+.divi4:hover img+p{
+    visibility: visible;
+}
+
+.divi5 p{
+    position: absolute;
+    top: 1700px;
+    left: 720px;
+    font-size: 40px;
+    color: white;
+    text-shadow: 3px 4px 5px black;
+    text-align: center;
+    visibility:hidden;
+}
+
+.divi5:hover img+p{
+    visibility: visible;
+}
+
+.divi6 p{
+    position: absolute;
+    top: 1700px;
+    left: 1230px;
+    font-size: 40px;
+    color: white;
+    text-shadow: 3px 4px 5px black;
+    text-align: center;
+    visibility:hidden;
+}
+
+.divi6:hover img+p{
+    visibility: visible;
+}
+
+
+#article3>aside>div>h1{
+    text-align: center;
+    padding-top: 30px;
+    font-size: 40px;
+    font-family: cursive;
+}
+
+#article3>.h1{
+    font-size: 70px;
+    font-family:cursive ;
+    font-weight: bold;
+    text-align: center;
+    color: coral;
+    margin-top: 50px;
+    text-shadow: 2px 3px 4px black;
+}
+
+
+
+

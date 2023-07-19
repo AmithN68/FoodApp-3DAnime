@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3d effect</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            background-color: bisque;
+        }
+
+        div{
+            position: relative;
+            width: 200px;
+            height: 200px;
+            transform-style: preserve-3d;
+            animation: rotate 30s linear infinite;
+        }
+
+        @keyframes rotate{
+            0%{transform: perspective(1000px) rotateY(0deg);}
+
+            100%{transform: perspective(1000px) rotateY(360deg);}
+        }
+
+        div span{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transform-origin: center;
+            transform-style: preserve-3d;
+            transform: rotateY(calc(var(--i)*45deg)) translateZ(350px);
+        }
+
+        div span img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            object-fit: cover;
+            transition: 2s;
+        }
+
+        div span:hover img{
+            transform:translateY(-50px) scale(1.2);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <span style="--i:1;"><img src="https://images.unsplash.com/photo-1610880846497-7257b23f6138?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fHN1cGVyY2FyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=400&q=60" alt=""></span>
+
+        <span style="--i:2;"><img src="https://images.unsplash.com/photo-1581439645268-ea7bbe6bd091?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=627&q=80" alt=""></span>
+
+        <span style="--i:3;"><img src="https://images.unsplash.com/photo-1567346495660-baf9ca9d661a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjV8fHN1cGVyY2FyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt=""></span>
+
+        <span style="--i:4;"><img src="https://images.unsplash.com/photo-1621431055592-5c021e404071?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTIxfHxzdXBlcmNhcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt=""></span>
+
+        <span style="--i:5;"><img src="https://images.unsplash.com/photo-1611651336487-802fe164d3e5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTgxfHxzdXBlcmNhcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt=""></span>
+
+        <span style="--i:6;"><img src="https://images.unsplash.com/photo-1657702540736-df73455afb29?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjU2fHxzdXBlcmNhcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt=""></span>
+
+        <span style="--i:7;"><img src="https://images.unsplash.com/photo-1654447398785-e02b3b0ebd0c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjcyfHxzdXBlcmNhcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt=""></span>
+
+        <span style="--i:8;"><img src="./supcarcoll.jpg" alt=""></span>
+
+    </div>
+</body>
+</html>

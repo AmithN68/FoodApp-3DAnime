@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&display=swap');
+*{
+    margin: 0;
+    padding:0;
+    box-sizing:border-box;
+}
+section{
+    height: 100vh;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(https://cdn.pixabay.com/photo/2018/03/02/13/38/vegetables-3193196_960_720.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#login_container{
+    border-radius: 10px;
+    height:58vh;
+    background-color: #fff;
+    margin-right: 550px;
+    box-shadow: 3px 3px 5px 7px black;
+}
+ #login_items{
+    height: 40vh;
+    width: 30vw;
+    border-bottom: 4px solid #0c0c0c;
+}
+#forgot_password_container{
+    height: 20vh;
+    width: 30vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+input{
+    border-radius: 15px;
+    height: 2.5em;
+    width:22em;
+    font-size:16px;
+    text-align: center;
+}
+#username{
+    position: relative;
+    top: 7vh;
+    left: 17%;
+    border:2px solid black;
+}
+#password{
+    position: relative;
+    top: 12vh;
+    left: 17%;
+    border:2px solid black;
+}
+button{
+    font-size: 1.1em;
+    font-family: 'Baloo Thambi 2';
+    font-weight: bold;
+    color: black;
+    background-color:  #0987fd;
+    border-radius: 6px;
+    height: 3em;
+    width:17em;
+    position: relative;
+    top: 18vh;
+    left: 25%;
+    border:2px solid black;
+}
+button>a{
+    text-decoration: none;
+    color: black;
+}
+button:hover{
+    background-color:#71a5d6 ;
+    cursor: pointer;
+}
+input{
+    border: none;
+}
+input::placeholder{
+    font-family: 'Baloo Thambi 2';
+    text-align: center;
+}
+input:focus{
+    outline:2px solid #5BD1D7;
+    border: none;
+}
+
+section #forgot_password{
+    font-family: 'Baloo Thambi 2';
+    font-size: 1.1em;
+    background-color: #dc1631;
+    height: 2.5em;
+    width: 10em;
+    display: flex;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    border:2px solid black;
+}
+
+#forgot_password :hover{
+    color: black;
+}
+section #sign_up{
+    font-family: 'Baloo Thambi 2';
+    font-size: 1.1em;
+    text-align: center;
+    background-color: #3fa990;
+    height: 2.5em;
+    width: 10em;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    border:2px solid black;
+}
+section #forgot_password_container a{
+    text-decoration: none;
+    color: white;
+}
+#sign_up :hover{
+    color:black;
+}
